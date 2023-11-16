@@ -5,7 +5,7 @@
 Главный герой передвигается при помощи клавиш WASD, атакует все соседние клетки по нажатию клавиши Пробел (Space).
 Противники передвигаются в случайном направлении (если доступно) и контратакуют игрока.
 
-- [GitHub Pages]: https://vladislavkuc.github.io/rogue-test-task/
+- GitHub Pages: https://vladislavkuc.github.io/rogue-test-task/
 ## Технологии
 - Vanilla JS
 - CSS
