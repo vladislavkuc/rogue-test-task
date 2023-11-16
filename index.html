@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Tinos:400,400i&amp;subset=cyrillic" rel="stylesheet">
+<style>
+* { box-sizing: border-box; }
+body, html { height: 100%; }
+body { background-color: #000000; color: #ffffff; }
+h1 { font-family: "Playfair Display"; font-size: 24px; padding: 0px; margin: 0px; }
+.field-box { border: 2px solid #d0d0d0; float: left; }
+.field { position: relative; width: 960px; height: 576px; display: flex; flex-wrap: wrap; }
+.field .tile { position: relative; width: 24px; height: 24px; background: center/100% url(src/images/tile-.png); z-index: 5; }
+.field .tileW { background-image: url(src/images/tile-W.png); }
+.field .tileHP { background-image: url(src/images/tile-HP.png); z-index: 9; }
+.field .tileSW { background-image: url(src/images/tile-SW.png); z-index: 9; }
+.field .tileE { background: center/100% url(src/images/tile-E.png), center/100% url(src/images/tile-.png);}
+.field .tileP { background-image: url(src/images/tile-P.png); z-index: 10; }
+.field .tile .health { background-color: #ff0000; z-index: 11; position: absolute; left: 0px; top: 0px; height: 3px; }
+.field .tileP .health { background-color: #00ff00; z-index: 11; position: absolute; left: 0px; top: 0px; height: 3px; }
+.inventory-box { border: 2px solid #d0d0d0; float: left; }
+.inventory { position: relative; width: 800px; height: 32px; }
+</style>
+	</head>
+	<body>
+		<h1>Игровое поле</h1>
+		<div class="field-box"><div class="field"></div></div>
+
+		<template id="tile">
+			<div class="tile"></div>
+		</template>
+		<template id="health">
+			<div class="health"></div>
+		</template>
+
+		<script src="./src/scripts/entities.js"></script>
+		<script src="./src/scripts/map.js"></script>
+		<script src="./index.js"></script>
+	</body>
+</html>
